@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title> Emek LeMark</title>
+	<!-- for responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- core bootstrap minified style -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"> 
+	<!-- loading icons for topnav -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- custom javascript -->
+	<link rel="stylesheet" href="js/main.js">
+	<!-- js for the modal -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+		
+</head>
+
+
+<body>
+
+	<!-- content master container -->
+	<div class="container-fluid">
+
+		<!-- Top Navbar -->
+		<div class="topnav" id="myTopnav">
+  			<a href="#home" class="active">Home</a>
+  			<a href="#news">About</a>
+  			<a href="#contact">Projects</a>
+  			<a href="#about">Contact</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  			</a>
+		</div>
+
+		<!-- header section -->
+		<header class="row header-container">
+			<div class="col-md-6 mylogo">
+				<img src="img/logo.png" alt="logo image">
+			</div>
+			<div class="col-md-6 text-uppercase">
+				<h1 class="title-big text-thin">Emek LeMark</h1>
+				<h4 class> Front End Engineer </h4>
+			</div>
+		</header>
+
+
+		<!-- horizontal line -->
+
+		<div class="col-md-12">
+			<hr>
+		</div>
+
+	<main>
+
+		<!-- main page content -->
+			<div class="col-md-12">
+				<figure>
+					<picture>
+						<source media="(max-width: 600px)" srcset="img/main-small.jpg">
+						<source media="(min-width: 900px)" srcset="img/main-large.jpg">	
+						<img src="img/main-large.jpg" alt="main feature image"
+					class="img-responsive img-rounded img-head">
+					</picture>
+				</figure>
+			</div>
+		<!-- header for sections -->
+			<div class="row feature-heading">
+				<hr class="col-md-8">
+			</div>
+			<div class="feature-heading">
+				<h2 class="text-center col-md-12"><span>Featured <strong>Work</strong></span></h2>
+			</div>
+	</main>
+
+							<!-- TODO: use srcset and media query for the images on the section. -->
+        	<!-- first card -->
+        	<section class="row">
+				<div class="card col-md-4 col-sm-6 col-xs-12 text-center">
+  					<img class="card-img-top" src="img/art-medium.jpg" alt="Graphic design">
+  					<div class="card-body">
+    					<h5 class="card-title">Graphic Design</h5>
+    					<p class="card-text">I try to solve visual communication problems with simple designs</p>
+    				<a href="#" class="btn btn-default" data-toggle="modal" data-target="#project1">more</a>
+  					</div>
+				</div>	
+   			<!-- modal for first card-->
+    			<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    				<div class="modal-dialog">
+    					<div class="modal-content">
+                        	<div class="modal-header">
+                            	<h4 class="modal-title" id="myModalLabel">Graphic Design</h4>
+                        	</div>
+                      		<div class="modal-body">
+                            	<img class="img-responsive" src="img/paint-medium.jpg" alt="graphic-image">
+                                	<p>This is the art or skill of combining text and pictures in advertisements, magazines, or books. It is easy to learn but hard to master.</p>
+                        	</div>
+                        	<div class="modal-footer">
+                            	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+
+
+            <!-- second card -->
+            	<div class="card col-md-4 col-sm-6 col-xs-12 text-center">
+  					<img class="card-img-top" src="img/webdev-medium.jpg" alt="Web development">
+  					<div class="card-body">
+    					<h5 class="card-title">Web Development </h5>
+    					<p class="card-text">Currently learning the ins and outs of front end development at Udacity</p>
+    				<a href="#" class="btn btn-default" data-toggle="modal" data-target="#project2" >more</a>
+  					</div>
+				</div>      		
+   			<!-- modal for second card-->
+    			<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    				<div class="modal-dialog">
+    					<div class="modal-content">
+                        	<div class="modal-header">
+                            	<h4 class="modal-title" id="myModalLabeltwo">Web Development</h4>
+                        	</div>
+                      		<div class="modal-body">
+                            	<img class="img-responsive" src="img/web-medium.jpg" alt="Image of Web development">
+                                	<p>This is my first project in this Nanodegree. I am learning a lot about HTML and CSS and excited to learn more about JavaScript.</p>
+                        	</div>
+                        	<div class="modal-footer">
+                            	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+
+
+            <!-- third card -->
+				<div class="card col-md-4 col-sm-6 col-xs-12 text-center" >
+  					<img class="card-img-top" src="img/lens-medium.jpg" alt=" Image of photography">
+  					<div class="card-body">
+    					<h5 class="card-title">Photography</h5>
+    					<p class="card-text"> Look into my lens and tell me what you see. I don’t trust words. I trust pictures. </p>
+    				<a href="#" class="btn btn-default" data-toggle="modal" data-target="#project3" >more</a>
+  					</div>
+				</div>      		
+   			<!-- modal for third card -->
+    			<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    				<div class="modal-dialog">
+    					<div class="modal-content">
+                        	<div class="modal-header">
+                            	<h4 class="modal-title" id="myModalLabelthree">Photography</h4>
+                        	</div>
+                      		<div class="modal-body">
+                            	<img class="img-responsive" src="img/photography-large.jpg" alt="photography image">
+                                	<p>Aperture, Shutter speed, ISO speed, exposure. Photography is all about light. To let the camera "see" what you wish, you have tools controlling how much light reaches the camera sensor: the aperture and shutter speed controls.</p>
+                        	</div>
+                        	<div class="modal-footer">
+                            	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        </section>
+
+
+            <!-- footer section -->
+            <footer class="bottom col-md-12">
+       			<ul>
+          			<li><a href="https://github.com/Emek-Lemark" target="blank"><i class="fa fa-github-alt fa-1x icon"></i></a>
+          			</li>
+          			<li><a href="https://twitter.com/emeka_ko" target="blank"><i class="fa fa-twitter fa-1x icon"></i></a>
+          			</li>
+          			<li><a href="https://www.linkedin.com/in/emeka-onyenwe-29327826/" target="blank"><i class="fa fa-linkedin fa-1x icon"></i></a>
+          			</li>
+          			<li><a href="http://www.emeklemark.com" target="blank"><i class="fa fa-home fa-1x icon"></i></a>
+          			</li>
+        		</ul>
+      		</footer> 
+      		</div> 
+  		
+</body>
+</html>
